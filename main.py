@@ -1,16 +1,16 @@
 import requests
 import base64
-#读入webside.txt 中的内容，并按行分割，生成一个列表
+#Read the content in webside.txt, split it by line, and generate a list
 with open('webside.txt','r') as f:
-    webside = f.read().splitlines()
-# 用request get列表中的每一个网址，并将结果进行base64解码后加入列表txt
+     webside = f.read().splitlines()
+# Use request to get each URL in the list, decode the result with base64 and add it to the list txt
 txt = []
 for i in webside:
-    r = requests.get(i)
-    txt.append(base64.b64decode(r.text).decode('utf-8'))
-# 对txt列表进行去重
+     r = requests.get(i)
+     txt.append(base64.b64decode(r.text).decode('utf-8'))
+# Deduplicate the txt list
 txt = list(set(txt))
-# 将txt列表写入到文件中
+# Write the txt list to the file
 with open('output.txt','w') as f:
-    for i in txt:
-        f.write(i+'\n')
+     for i in txt:
+         f.write(i+'\n')
