@@ -1,12 +1,12 @@
 # free-v2ray-merge
 
-# 向各位求助
-如果各位有好的v2ray 2 clash方案，且该方案可支持大量的订阅链接，请在Issue告诉我！感谢
+# Asking for help
+If you have a good v2ray 2 clash solution that can support a large number of subscription links, please let me know in the Issue! grateful
 
-v2ray节点合并，免费翻墙，蓝灯，梯子，不用再受反华言论的侵扰
-# 本仓库仅供学习使用，请勿发表不当言论，遵守当地宪法法律使用
+v2ray node merging, free circumvention, blue light, ladder, no more intrusion by anti-China remarks
+# This repository is for learning purposes only. Please do not make inappropriate remarks and use it in compliance with the local constitution and laws.
 
 ## Todo
-- clash订阅
-- 获取更多节点
-- 使用github action进行自动合并
+- clashsubscribe
+- Get more nodes
+- Use github action for automatic merging
